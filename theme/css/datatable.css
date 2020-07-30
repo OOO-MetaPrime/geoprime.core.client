@@ -1,0 +1,80 @@
+.dataTable {
+  margin: 0;
+  max-width: none;
+  border-collapse: separate;
+}
+.dataTable thead th,
+.dataTable thead td {
+  outline: 0;
+  position: relative;
+  height: 5em;
+}
+.dataTable thead .sorting_asc,
+.dataTable thead .sorting_desc,
+.dataTable thead .sorting {
+  cursor: pointer;
+}
+.dataTable thead .sorting,
+.dataTable thead .sorting_asc,
+.dataTable thead .sorting_desc,
+.dataTable thead .sorting_asc_disabled,
+.dataTable thead .sorting_desc_disabled {
+  padding-right: 30px;
+}
+.dataTable thead .sorting:before,
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:after,
+.dataTable thead .sorting_asc_disabled:after,
+.dataTable thead .sorting_desc_disabled:after {
+  content: '';
+  font-family: 'gprime';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 18px;
+  margin-top: -6px;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dataTable thead .sorting:before {
+  content: '\f143';
+  margin-top: -2px;
+  color: #999999;
+}
+.dataTable thead .sorting:after {
+  content: '\f140';
+  margin-top: -10px;
+  color: #999999;
+}
+.dataTable thead .sorting_asc:after {
+  content: '\f140';
+}
+.dataTable thead .sorting_desc:after {
+  content: '\f143';
+}
+.dataTable thead .sorting_asc_disabled:after {
+  content: '\f140';
+  color: #ccc;
+}
+.dataTable thead .sorting_desc_disabled:after {
+  content: '\f143';
+  color: #ccc;
+}
+.dataTable tbody > tr:first-child > th,
+.dataTable tbody > tr:first-child > td {
+  border-top: 0;
+}
+.dataTable tbody + thead > tr:first-child > th,
+.dataTable tbody + tfoot + thead > tr:first-child > th,
+.dataTable tbody + thead > tr:first-child > td,
+.dataTable tbody + tfoot + thead > tr:first-child > td {
+  border-top: 0;
+}
+
+.dataTable tbody > tr.selected,
+.dataTable tbody > tr > .selected {
+  background-color: #E3F0E4;
+}

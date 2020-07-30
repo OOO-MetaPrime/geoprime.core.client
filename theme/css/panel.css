@@ -1,0 +1,187 @@
+.heading-elements-toggle,
+.breadcrumb-elements-toggle {
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+.heading-elements-toggle,
+.breadcrumb-elements-toggle,
+.heading-elements-toggle:hover,
+.breadcrumb-elements-toggle:hover,
+.heading-elements-toggle:focus,
+.breadcrumb-elements-toggle:focus {
+  color: inherit;
+}
+.heading-elements-toggle > i,
+.breadcrumb-elements-toggle > i {
+  top: 0;
+}
+@media (min-width: 769px) {
+  .heading-elements-toggle,
+  .breadcrumb-elements-toggle {
+    display: none;
+  }
+}
+.heading-elements-toggle {
+  right: 20px;
+}
+.breadcrumb-elements-toggle {
+  right: 20px;
+}
+.breadcrumb-line-component .breadcrumb-elements-toggle {
+  right: 15px;
+}
+.heading-elements {
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  height: 36px;
+  margin-top: -18px;
+}
+.panel-body > .heading-elements {
+  top: 0;
+  margin-top: 14px;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .panel-body > .heading-elements-toggle {
+    top: 20px;
+    margin-top: 0;
+  }
+  .panel-body > .heading-elements.visible {
+    top: 56px;
+    background-color: #fff;
+  }
+}
+.heading-elements .heading-btn + .heading-btn,
+.thumbnail-heading .heading-elements .icons-list > li + li {
+  margin-left: 10px;
+}
+.heading-elements .pager {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.heading-elements .breadcrumb {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.heading-elements .heading-btn-group {
+  font-size: 0;
+}
+.heading-elements .heading-btn-group > .btn + .btn:not(.btn-link) {
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .heading-elements {
+    text-align: center;
+  }
+  .heading-elements .heading-text,
+  .heading-elements .heading-btn,
+  .heading-elements .heading-btn-group > .btn,
+  .heading-elements .noui-slider,
+  .heading-elements .icons-list,
+  .heading-elements .breadcrumb,
+  .heading-elements > .btn-group {
+    margin-bottom: 20px;
+  }
+  .heading-elements .heading-text:not(.label):not(.badge) {
+    display: block;
+  }
+  .heading-elements .input-group,
+  .heading-elements .input-group-btn,
+  .heading-elements .btn-group,
+  .heading-elements .dropdown,
+  .heading-elements .dropup {
+    position: static;
+  }
+  .heading-elements .dropdown-menu {
+    left: -1px;
+    right: -1px;
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+@media (min-width: 769px) {
+  .heading-elements .heading-text,
+  .heading-elements .heading-btn,
+  .heading-elements .noui-slider,
+  .heading-elements .icons-list,
+  .heading-elements .breadcrumb,
+  .heading-elements > .btn-group {
+    float: left;
+    margin-left: 20px;
+  }
+  .heading-elements .heading-text {
+    display: inline-block;
+  }
+  .heading-elements .heading-text + .heading-text {
+    margin-left: 20px;
+  }
+  .heading-elements .progress,
+  .heading-elements .noui-slider,
+  .heading-elements .uploader,
+  .heading-elements .input-group {
+    width: 220px;
+  }
+  .heading-elements .btn-sm {
+    margin-top: 1px;
+  }
+  .heading-elements .btn-xs {
+    margin-top: 2px;
+  }
+  .heading-elements .noui-slider {
+    margin-top: 15px;
+  }
+  .heading-elements .noui-slider-lg {
+    margin-top: 14px;
+  }
+  .heading-elements .noui-slider-sm {
+    margin-top: 16px;
+  }
+  .heading-elements .noui-slider-xs {
+    margin-top: 17px;
+  }
+  .heading-elements .icons-list {
+    margin-top: 9px;
+  }
+  .heading-elements .heading-text {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-elements,
+  .breadcrumb-elements {
+    display: none;
+  }
+  .heading-elements.visible,
+  .breadcrumb-elements.visible {
+    display: block;
+    margin-top: 0;
+    top: 100%;
+    height: auto;
+    left: -1px;
+    right: -1px;
+    padding: 20px;
+    padding-bottom: 0;
+    border: 1px solid #ddd;
+    z-index: 997;
+  }
+  .panel[class*=bg-] .heading-elements.visible,
+  .panel-heading[class*=bg-] .heading-elements.visible {
+    border-width: 1px 0;
+    border-color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    right: 0;
+    background-color: inherit;
+  }
+  .breadcrumb-elements.visible {
+    padding: 0;
+    z-index: 9;
+  }
+}
+

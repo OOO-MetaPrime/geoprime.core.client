@@ -1,0 +1,11 @@
+.fg-primary {
+  color: #0766A6;
+}
+.border-primary {
+  border: 1px solid #0761A1;
+}
+.bg-inverse {
+  background-color: #0766A6;
+  border-color: #0761A1;
+  color: #fff;
+}
